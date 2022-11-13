@@ -98,6 +98,7 @@ const (
 	Matrix                 string = "matrix"
 	OpsgenieProvider       string = "opsgenie"
 	AlertManagerProvider   string = "alertmanager"
+	ZoomProvider           string = "zoom"
 )
 
 // ProviderStatus defines the observed state of Provider

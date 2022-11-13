@@ -97,6 +97,8 @@ func (f Factory) Notifier(provider string) (Interface, error) {
 		n, err = NewAlertmanager(f.URL, f.ProxyURL, f.CertPool)
 	case v1beta1.GrafanaProvider:
 		n, err = NewGrafana(f.URL, f.ProxyURL, f.Token, f.CertPool, f.Username, f.Password)
+	case v1beta1.ZoomProvider:
+
 	default:
 		err = fmt.Errorf("provider %s not supported", provider)
 	}
